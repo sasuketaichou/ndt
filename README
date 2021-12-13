@@ -1,0 +1,29 @@
+## Set up environment ##
+
+1. pip install -r requirements.txt, works best on python3.6 and if cuda gpu is available
+
+## Data Preparation ##
+
+1. I have separate between "Weld (weld)" and "Others (ntweld)" dataset. I have noticed the dataset is not balance, 958 for Others while only 68 for Weld images
+2. Execute run_augment.py to augment dataset (oversampling)
+
+## Training ##
+
+1. Execute run_train.py to start training.
+1.1 Split dataset into train and test, 75% and 25% respectively
+1.2 Normalize pixel value between 0-1
+1.3 Set lable 0 to Others and 1 for Weld
+1.4 Using lenet architecture that receive an input of 64x64x3 and output of 2x1
+1.5 reLu activation function
+1.6 sgd optmizer
+
+2. Learning rate define by number of epoch
+3. Model will be generate
+
+## Inference ##
+
+1. Execute run_inference.py to test model
+2. Input is test.png of this root dir
+3. Output is probability by softmax with respect of number of class
+
+

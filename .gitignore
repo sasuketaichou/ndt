@@ -1,0 +1,5 @@
+xray/
+dataset/
+__pycache__/
+lenet_dp/
+X-ray-images.zip
