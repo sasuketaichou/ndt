@@ -43,8 +43,8 @@ if __name__ == '__main__':
     x_train = x_train.astype('float32')
     x_test = x_test.astype('float32')
     
-    x_train /= 255.0
-    x_test /= 255.0
+    #x_train /= 255.0
+    #x_test /= 255.0
     # mean  = [125.307, 122.95, 113.865]
     # std   = [62.9932, 62.0887, 66.7048]
     # for i in range(3):
